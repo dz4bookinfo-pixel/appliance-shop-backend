@@ -68,7 +68,7 @@ Future<void> main(List<String> args) async {
         await databases.createDocument(
           databaseId: databaseId,
           collectionId: productsCollectionId,
-          documentId: ID.unique(),
+          documentId: DateTime.now().millisecondsSinceEpoch.toString()(),
           data: {
             'name': product['name'],
             'category': product['category'],
