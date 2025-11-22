@@ -10,3 +10,6 @@ dependencies:
 
 dev_dependencies:
   lints: ^3.0.0
+
+  executables:
+  seed_catalog:
